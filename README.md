@@ -1,4 +1,4 @@
-# Remotion video with Tailwind
+# Remotion Effects Directory
 
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
@@ -9,7 +9,9 @@
   </a>
 </p>
 
-Welcome to your Remotion project!
+Welcome to your Remotion effects directory!
+
+<p>This directory is made to store common effects built with remotion</p>
 
 ## Commands
 
