@@ -1,7 +1,7 @@
 import {AbsoluteFill} from 'remotion';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
-import {Rise} from '../components/Rise';
+import {FlatSide} from '../components/FlatSide';
 
 export const myCompSchema = z.object({
 	titleText: z.string(),
@@ -9,16 +9,19 @@ export const myCompSchema = z.object({
 	logoColor: zColor(),
 });
 
-export const RiseComposition: React.FC<z.infer<typeof myCompSchema>> = ({
+export const FlatSideComposition: React.FC<z.infer<typeof myCompSchema>> = ({
 	titleText: propOne,
 	titleColor: propTwo,
 	logoColor: propThree,
 }) => {
 	return (
 		<AbsoluteFill className="bg-gray-100 items-center justify-center">
-			<Rise fontSize={2} color="red" animate="exit">
-				<h1>Rise Effect</h1>
-			</Rise>
+			<div className="m-10" />
+
+			<FlatSide animate="exit" direction="left">
+				<h1>Flat Side Effect</h1>
+			</FlatSide>
+			<div className="m-3" />
 		</AbsoluteFill>
 	);
 };

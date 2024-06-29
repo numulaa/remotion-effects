@@ -44,7 +44,7 @@ export const Rise: React.FC<{
 	const outOpacity = interpolate(inSpring, [0, 1], [1, 0], {
 		extrapolateRight: 'clamp',
 	});
-	const outTranslateY = interpolate(inSpring, [0, 1], [0, height / 2], {
+	const outTranslateY = interpolate(outSpring, [0, 1], [-height / 2, 0], {
 		extrapolateRight: 'clamp',
 	});
 
